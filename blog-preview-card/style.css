@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(---gray-950);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+:root {
+    --yellow: #F4D04E;
+    ---gray-950: #111111;
+    ---gray-500: #6B6B6B;
+
+    ---spacing-50: 4px;
+    ---spacing-150: 12px;
+    ---spacing-300: 24px;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: var(--yellow);
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 99%;
+    padding: var(---spacing-300);
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(---gray-950);
+    font-weight: 800;
+}
+
+p {
+    color: var(---gray-500);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(---spacing-150);
+    margin: var(---spacing-300) 0;
+    align-items: flex-start;
+}
+
+.chip {
+    border-radius: var(---spacing-50);
+    padding: var(---spacing-50) var(---spacing-150);
+    background-color: var(--yellow);
+    font-weight: 800;
+}
+
+.time {
+    font-size: 0.875rem;
+}
+
+.card {
+    border: 1px solid var(---gray-950);
+    background-color: #FFF;
+    width: 100%;
+    padding: var(---spacing-300);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 0 #000;
+    overflow: hidden;
+}
+
+.card img.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: var(---spacing-150);
+    color: var(---gray-950);
+}
+
+.author span {
+    font-weight: 800;
+}
+
+footer {
+    position: sticky;
+    bottom: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        max-width: 400px;
+    }
+    
+}
