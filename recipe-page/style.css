@@ -1,0 +1,148 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src:
+        local("Outfit"),
+        url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("opentype");
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "YoungSerif";
+    src:
+        local("YoungSerif"),
+        url("./assets/fonts/young-serif/YoungSerif-Regular.ttf") format("opentype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    line-height: 140%;
+    color: var(--stone-600);
+}
+
+h1, b, strong {
+    color: var(--stone-900);
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'YoungSerif', serif;
+}
+
+body {
+    background-color: var(--stone-100);
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 100%;
+}
+
+.recipe-card {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 24px;
+    text-align: start;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.highlights {
+    background-color: var(--rose-50);
+    padding: 20px;
+}
+
+.highlights h3 {
+    color: var(--rose-800);
+    margin-bottom: 10px;
+}
+
+.recipe-card .highlights li {
+    margin-left: 20px;
+}
+
+.recipe-card li {
+    margin-left: 24px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.recipe-card li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'YoungSerif', serif;
+    font-weight: 400;
+    color: var(--brown-800);
+}
+
+hr {
+    border-top: 1px solid var(--stone-150);
+}
+
+.recipe-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recipe-card th, .recipe-card td {
+    padding: 10px;
+    text-align: left;
+}
+
+.recipe-card tr {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe-card tbody tr:last-of-type {
+    border-bottom: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
